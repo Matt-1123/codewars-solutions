@@ -13,3 +13,8 @@ const findOdd = ints => {
     if(obj[prop] % 2 !== 0) return Number(prop);
   }
 }
+
+// Find the sum of an array of numbers
+const sum = numbers => numbers.reduce((total, num) => {
+  return total + num;
+}, 0);
