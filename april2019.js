@@ -18,3 +18,25 @@ const findOdd = ints => {
 const sum = numbers => numbers.reduce((total, num) => {
   return total + num;
 }, 0);
+
+// Mumbling (7kyu)
+// accum("abcd") -> "A-Bb-Ccc-Dddd"
+// accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+// accum("cwAt") -> "C-Ww-Aaa-Tttt"
+// My solution:
+function accum(s) {
+  let result = '';
+  for(let i = 0; i < s.length; i++){
+    let letterStr = s[i].toUpperCase();
+    letterStr += s[i].toLowerCase().repeat(i);
+    if(i !== s.length - 1){
+      letterStr += "-";
+    }
+    result += letterStr;
+  }
+  return result;
+}
+// Best practice solution:
+function accum(s) {
+  return s.split('').map((c, i) => (c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
+}
