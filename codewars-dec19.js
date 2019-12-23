@@ -7,3 +7,9 @@ function generateRange(min, max, step){
   }
   return arr;
 }
+
+// Mon Dec 23, 2019
+// Remove vowels from a string (7kyu)
+var removeVowels = function(str){
+  return str.replace(/[aeiou]/ig,'');
+}
