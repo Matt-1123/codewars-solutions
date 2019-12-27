@@ -13,3 +13,16 @@ function generateRange(min, max, step){
 var removeVowels = function(str){
   return str.replace(/[aeiou]/ig,'');
 }
+
+// Fri Dec 27, 2019
+// Remove spaces (8kyu)
+// JS:
+function noSpace(x){
+  return x.replace(/ /g,"");
+}
+// Java:
+class Kata {
+  static String noSpace(final String x) {
+      return x.replaceAll("\\s+","");
+  }
+}
