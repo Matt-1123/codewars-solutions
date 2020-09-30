@@ -35,3 +35,13 @@ class Solution{
       return result;
   }
 }
+
+// 9/30/20
+// Can we Divide it?
+// JS:
+function isDivideBy(number, a, b) {
+  return number % a == 0 && number % b == 0;
+}
+// Python:
+def is_divide_by(number, a, b):
+    return number % a == 0 and number % b == 0
