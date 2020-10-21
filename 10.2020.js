@@ -7,3 +7,5 @@ const greet = (name) => `Hello, ${name} how are you doing today?`;
 // Java:
 
 // Python:
+def greet(name):
+    return "Hello, " + name + " how are you doing today?"
