@@ -12,3 +12,8 @@ const spongeMeme = (sentence) =>
     .split("")
     .map((ltr, i) => (i % 2 === 0 ? ltr.toUpperCase() : ltr.toLowerCase()))
     .join("");
+
+// 11/7/21
+// Nathan drinks 0.5 litres of water per hour of cycling.
+// You are given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
+const litres = (time) => Math.floor(time / 2);
