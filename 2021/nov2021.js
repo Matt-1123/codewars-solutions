@@ -29,3 +29,8 @@ const findDifference = (a, b) => {
   );
   return Math.abs(aVolume - bVolume);
 };
+
+// 11/13/21
+// Filter array to get even numbers
+const getEvenNumbers = (numbersArray) =>
+  numbersArray.filter((num) => num % 2 === 0);
